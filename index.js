@@ -13,13 +13,17 @@ $(document).ready(function() {
 		if ($(window).scrollTop() >= $('#work').offset().top 
 			&& $(window).scrollTop() <= $('#work').outerHeight()) {
 			if(!animated.work) {
-				$('#verticalHeaderContainer').removeClass('col-md-push-10')
-				$('#contentContainer').removeClass('col-md-pull-2');
-				
-				$('#verticalHeader').css('visibility', '');
-				$('#work').css('visibility', '');
 				$(document.body).css('background-color', 'grey');
 				$('#bigHeader').css('visibility', 'hidden');
+				$('#contact').css('visibility', 'hidden');
+
+				$('#verticalHeaderContainer').removeClass('col-md-push-10')
+				$('#contentContainer').removeClass('col-md-pull-2');
+
+				$('#verticalHeader').css('visibility', '');
+				$('#work').css('visibility', '');
+				
+
 				
 				$('#work').animateCSS('zoomIn');
 				$('#verticalHeader').animateCSS('slideInLeft');
@@ -33,6 +37,8 @@ $(document).ready(function() {
 				$('#verticalHeaderContainer').addClass('col-md-push-10');
 				$('#contentContainer').addClass('col-md-pull-2');
 
+				$('#contact').css('visibility', '');
+				$('#work').css('visibility', 'hidden');
 				animated.contact = true;			
 			}
 			animated.work = false;
