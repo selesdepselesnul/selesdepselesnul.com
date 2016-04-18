@@ -15,21 +15,25 @@
 	<script type="text/javascript" src="index.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="lib/animate.min.css">
+	<script type="text/javascript" src="lib/jquery.aniview.min.js"></script>
+	<script type="text/javascript" src="lib/jScrollability.min.js"></script>
+
 </head>
 <body>
 <div class="container">
-	<header class="row" id="bigHeader">
+	<header class="row animated bounce" id="bigHeader">
 		<div class="row">
-			<a href="#bigHeader" id="aboutLink" class="col-md-6 text-left">About</a>
-			<a href="#cotact" id="contactLink" class="col-md-6 text-right">Contact</a>
+			<a href="#bigHeader" id="aboutLink" class="col-md-6 text-left menu">About</a>
+			<a href="#cotact" id="contactLink" class="col-md-6 text-right menu">Contact</a>
 		</div>
 		<div id="aboutContent" class="row">
 			Hi :) My Name is Moch Deden i'm a freelance programmer <br/> 
 			currently i'm living in Bandung, Indonesia	
 		</div>
 		<div class="row">
-			<a href="#work" id="workLink" class="col-md-6 text-left">Work</a>
-			<a href="#note" id="noteLink" class="col-md-6 text-right">Note</a>
+			<a href="#work" id="workLink" class="col-md-6 text-left menu">Work</a>
+			<a href="#note" id="noteLink" class="col-md-6 text-right menu">Note</a>
 		</div>
 	</header>
 	<section class="row" id="content">
@@ -43,21 +47,107 @@
 		</div>
 		
 		<section class="col-md-10">
-			<section class="row" id="work">
-				<div class="row">
-					<img src="none.jpg" alt="" class="img-thumbnail col-md-4">
-					<img src="none.jpg" alt="" class="img-thumbnail col-md-4">
-					<img src="none.jpg" alt="" class="img-thumbnail col-md-4">	
-				</div>
-				<div class="row">
-					<img src="none.jpg" alt="" class="img-thumbnail col-md-4">
-					<img src="none.jpg" alt="" class="img-thumbnail col-md-4">
-					<img src="none.jpg" alt="" class="img-thumbnail col-md-4">	
-				</div>
-			</section>
-			<section class="row content" id="contact">
+			
+				<section class="row" id="work">
+					<div class="row">
+						  <div class="col-sm-6 col-md-4">
+						    <div class="thumbnail">
+						      <img src="none.jpg" alt="...">
+						      <div class="caption">
+						        <h3>Thumbnail label</h3>
+						        <p>blablabla</p>
+						        <a href="#" class="btn btn-primary" role="button">Button</a>
+						      </div>
+						    </div>
+						  </div>
+						
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="none.jpg" alt="...">
+							      <div class="caption">
+							        <h3>Thumbnail label</h3>
+							        <p>blablabla</p>
+							        <a href="#" class="btn btn-primary" role="button">Button</a>
+							      </div>
+							    </div>
+							  </div>
+						
+						
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="none.jpg" alt="...">
+							      <div class="caption">
+							        <h3>Thumbnail label</h3>
+							        <p>blablabla</p>
+							        <a href="#" class="btn btn-primary" role="button">Button</a>
+							      </div>
+							    </div>
+							  </div>
+					
+					</div>
+					<div class="row">
+						  <div class="col-sm-6 col-md-4">
+						    <div class="thumbnail">
+						      <img src="none.jpg" alt="...">
+						      <div class="caption">
+						        <h3>Thumbnail label</h3>
+						        <p>blablabla</p>
+						        <a href="#" class="btn btn-primary" role="button">Button</a>
+						      </div>
+						    </div>
+						  </div>
+						
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="none.jpg" alt="...">
+							      <div class="caption">
+							        <h3>Thumbnail label</h3>
+							        <p>blablabla</p>
+							        <a href="#" class="btn btn-primary" role="button">Button</a>
+							      </div>
+							    </div>
+							  </div>
+						
+						
+							  <div class="col-sm-6 col-md-4">
+							    <div class="thumbnail">
+							      <img src="none.jpg" alt="...">
+							      <div class="caption">
+							        <h3>Thumbnail label</h3>
+							        <p>blablabla</p>
+							        <a href="#" class="btn btn-primary" role="button">Button</a>
+							      </div>
+							    </div>
+							  </div>
+					
+					</div>
+				</section>		
+		
+		
+			<section class="row content" id="contact" >
 				GET IN TOUCH <br/>
 				If you have a project you would like me to hire me to work on or if you have something we could collaborate on, please feel free to get in touch.
+				<form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputFile">File input</label>
+				    <input type="file" id="exampleInputFile">
+				    <p class="help-block">Example block-level help text here.</p>
+				  </div>
+				  <div class="checkbox">
+				    <label>
+				      <input type="checkbox"> Check me out
+				    </label>
+				  </div>
+				  <button type="submit" class="btn btn-default">Submit</button>
+				</form>
 			</section>		
 		</section>
 	
