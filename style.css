@@ -17,7 +17,7 @@ body {
 	font-size: 1.8em;
 }
 
-#horizontalHeader {
+#verticalHeader {
 	position: fixed;
 	z-index: 1;
 	font-size: 2em;
@@ -29,6 +29,10 @@ body {
 	font-size: 2em;
 }
 
-.row {
-	margin-top: 2%;
+#work {
+	visibility: hidden;
+}
+
+#contact {
+	font-size: 3em;
 }
