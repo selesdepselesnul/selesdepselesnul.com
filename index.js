@@ -13,6 +13,7 @@ $(document).ready(function() {
 		if ($(window).scrollTop() >= $('#work').offset().top 
 			&& $(window).scrollTop() <= $('#work').outerHeight()) {
 			if(!animated.work) {
+				$('*').css('color', 'white');
 				$(document.body).css('background-color', 'grey');
 				$('#bigHeader').css('visibility', 'hidden');
 				$('#contact').css('visibility', 'hidden');
@@ -34,17 +35,22 @@ $(document).ready(function() {
 		} else if($(window).scrollTop() > $('#work').outerHeight()){ // contact
 			console.log('not work part');
 			if(!animated.contact) {
+				$(document.body).css('background-color', 'white');
+				$('*').css('color', 'black');
+				$('#work').css('visibility', 'hidden');
 				$('#verticalHeaderContainer').addClass('col-md-push-10');
 				$('#contentContainer').addClass('col-md-pull-2');
 
 				$('#contact').css('visibility', '');
-				$('#work').css('visibility', 'hidden');
+				$('#contact').animateCSS('shake');
+		
 				animated.contact = true;			
 			}
 			animated.work = false;
-			animated.contact = false
+			animated.about = false
 		} else { // about
 			if(!animated.about) {
+				$('*').css('color', 'white');
 				$('#verticalHeader').css('visibility', 'hidden');
 				$('#bigHeader').css('visibility', '');
 				$('#work').css('visibility', 'hidden');
