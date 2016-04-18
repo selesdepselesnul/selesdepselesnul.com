@@ -13,15 +13,13 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-
-
 </head>
 <body>
 <div class="container">
-	<header class="row">
-
+	<header class="row" id="bigHeader">
 		<div class="row">
 			<a href="#about" id="aboutLink" class="col-md-6 text-left">About</a>
 			<a href="#cotact" id="contactLink" class="col-md-6 text-right">Contact</a>
@@ -34,7 +32,12 @@
 			<a href="#work" id="workLink" class="col-md-6 text-left">Work</a>
 			<a href="#note" id="noteLink" class="col-md-6 text-right">Note</a>
 		</div>
-		
+	</header>
+	<header id="horizontalHeader" class="row">
+			<a href="#about" id="aboutLink" class="col-md-3">About</a>
+			<a href="#cotact" id="contactLink" class="col-md-3">Contact</a>
+			<a href="#work" id="workLink" class="col-md-3">Work</a>
+			<a href="#note" id="noteLink" class="col-md-3">Note</a>
 	</header>
 	<article class="row" id="work">
 	<div class="row">
@@ -47,15 +50,7 @@
 		<img src="none.jpg" alt="" class="img-thumbnail col-md-4">
 		<img src="none.jpg" alt="" class="img-thumbnail col-md-4">	
 	</div>
-	<img src="" alt="" class="img-thumbnail">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</article>
-	<section class="row">
+	<section class="row" id="contact">
 		GET IN TOUCH <br/>
 		If you have a project you would like me to hire me to work on or if you have something we could collaborate on, please feel free to get in touch.
 	</section>
