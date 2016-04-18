@@ -1,0 +1,16 @@
+
+body {
+	background-color: black;
+}
+
+.menu {
+	text-align: center;
+	font-size: 1.2em;
+}
+
+
+#aboutContent {
+	color: white;
+	text-align: center;
+	font-size: 2em;
+}
