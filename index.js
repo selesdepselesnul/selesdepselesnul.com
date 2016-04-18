@@ -7,7 +7,9 @@ $(document).ready(function() {
 		work : false,
 		contact: false
 	};
-
+	$('#aboutContent').animateCSS('bounce', {
+		infinite: true
+	});
 	$(window).scroll(function(e) {
 		// work
 		if ($(window).scrollTop() >= $('#work').offset().top 
@@ -51,6 +53,7 @@ $(document).ready(function() {
 		} else { // about
 			if(!animated.about) {
 				$('*').css('color', 'white');
+
 				$('#verticalHeader').css('visibility', 'hidden');
 				$('#bigHeader').css('visibility', '');
 				$('#work').css('visibility', 'hidden');
