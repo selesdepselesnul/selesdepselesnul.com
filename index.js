@@ -4,6 +4,9 @@ $(document).ready(function() {
 		console.log('hover!');
 		$(this).animateCSS('pulse');
 	})
+	$('#aboutContent').mouseenter(function(e) {
+		$(this).animateCSS('tada');
+	})
 	$('#work').css('visibility', 'hidden');
 	$('#contact').css('visibility', 'hidden');
 	$('#verticalHeader').css('visibility', 'hidden');
@@ -12,9 +15,7 @@ $(document).ready(function() {
 		work : false,
 		contact: false
 	};
-	$('#aboutContent').animateCSS('bounce', {
-		infinite: true
-	});
+	$('#aboutContent').animateCSS('tada');
 	$(window).scroll(function(e) {
 		// work
 		if ($(window).scrollTop() >= $('#work').offset().top 
