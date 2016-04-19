@@ -55,7 +55,7 @@ $(document).ready(function() {
 				$('#contentContainer').addClass('col-md-pull-2');
 
 				$('#contact').css('visibility', '');
-				$('#contact').animateCSS('shake');
+				$('#contact').animateCSS('slideInLeft');
 		
 				animated.contact = true;			
 			}
