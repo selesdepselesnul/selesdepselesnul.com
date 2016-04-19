@@ -25,43 +25,34 @@
 <body>
 <div class="container">
 	<header class="row" id="bigHeader">
-		<div class="row">
-			<ul>
-				<li>
-					<a href="#bigHeader" id="aboutLink" class="col-md-6 text-left menu">About</a>	
-				</li>
-				<li>
-					<a href="#contact" id="contactLink" class="col-md-6 text-right menu">Contact</a>		
-				</li>
+
+		<ul class="nav nav-pills nav-justified">
+			<li id="aboutMenu" class="presentation">
+				<a href="#bigHeader" id="aboutLink" class="menu">About</a>	
+			</li>
+			<li class="presentation">
+				<a href="#work" id="workLink" class="menu">Work</a>		
+			</li>
+			<li class="presentation">
+				<a href="#contact" id="contactLink" class="menu">Contact</a>		
+			</li>
 				
-			</ul>
-		</div>
+		</ul>
+	
 		<div id="aboutContent" class="row">
 			Hi :) My Name is Moch Deden i'm a freelance programmer <br/> 
 			currently i'm living in Bandung, Indonesia	
 		</div>
-		<div class="row">
-			<ul>
-				<li>
-					<a href="#work" id="workLink" class="col-md-6 text-left menu">Work</a>	
-				</li>
-				<li>
-					<a href="#note" id="noteLink" class="col-md-6 text-right menu">
-						Note
-					</a>	
-				</li>
-				
-			</ul>
-		</div>
+		
 	</header>
 	<section class="row" id="content">
 		<div class="col-md-2" id="verticalHeaderContainer">
 			<ul id="verticalHeader" class="nav nav-pills nav-stacked">
 				<li role="presentation"><a href="#bigHeader" id="aboutLink">About</a></li>
-				<li role="presentation"><a href="#work" id="workLink">Work</a></li>
-				<li role="presentation">
+				<li role="presentation" id="workMenu">
+				<a href="#work" id="workLink">Work</a></li>
+				<li role="presentation" id="contactMenu">
 				<a href="#contact" id="contactLink">Contact</a></li>
-				<li role="presentation"><a href="#note" id="noteLink">Note</a></li>
 			</ul>	
 		</div>
 		

@@ -1,5 +1,6 @@
 $(document).ready(function() {
 
+
 	$('.menu').hover(function(e) {
 		console.log('hover!');
 		$(this).animateCSS('pulse');
@@ -21,6 +22,8 @@ $(document).ready(function() {
 		if ($(window).scrollTop() >= $('#work').offset().top 
 			&& $(window).scrollTop() <= $('#work').outerHeight()) {
 			if(!animated.work) {
+				$('#contactMenu').removeClass('active');
+				$('#workMenu').addClass('active');
 				$('*').css('color', 'white');
 				$(document.body).css('background-color', 'grey');
 				$('#bigHeader').css('visibility', 'hidden');
@@ -43,6 +46,8 @@ $(document).ready(function() {
 		} else if($(window).scrollTop() > $('#work').outerHeight()){ // contact
 			console.log('not work part');
 			if(!animated.contact) {
+				$('#workMenu').removeClass('active');
+				$('#contactMenu').addClass('active');
 				$(document.body).css('background-color', 'white');
 				$('*').css('color', 'black');
 				$('#work').css('visibility', 'hidden');
@@ -58,6 +63,10 @@ $(document).ready(function() {
 			animated.about = false
 		} else { // about
 			if(!animated.about) {
+				$('#aboutMenu').css({
+					'background-color': '#337ab7',
+					'border-radius' : '4px'
+				});
 				$('*').css('color', 'white');
 				$('#aboutContent').animateCSS('tada');
 				$('#verticalHeader').css('visibility', 'hidden');

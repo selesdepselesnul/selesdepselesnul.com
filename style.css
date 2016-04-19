@@ -3,6 +3,11 @@
 	height: 40px;
 }
 
+#aboutMenu > a {
+	background-color: #337ab7;
+	width: auto;
+	border-radius: 4px;
+}
 a.menu {
 	color: white;
 	text-decoration: none;
@@ -44,4 +49,8 @@ body {
 
 #contact {
 	font-size: 3em;
+}
+
+.row {
+	margin-top: 20px;
 }
