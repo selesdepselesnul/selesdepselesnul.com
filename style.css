@@ -41,6 +41,7 @@ body {
 	color: white;
 	text-align: center;
 	font-size: 2em;
+	margin-top: 10%;
 }
 
 #work {
@@ -51,6 +52,6 @@ body {
 	font-size: 3em;
 }
 
-.row {
-	margin-top: 20px;
+#bigHeader {
+	margin-top: 5%;
 }
