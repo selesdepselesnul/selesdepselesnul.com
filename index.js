@@ -51,6 +51,8 @@ $(document).ready(function() {
 				$(document.body).css('background-color', 'white');
 				$('*').css('color', 'black');
 				$('#work').css('visibility', 'hidden');
+				$('#verticalHeader').css('visibility', '');
+				$('#verticalHeader').animateCSS('bounceInRight');
 				$('#verticalHeaderContainer').addClass('col-md-push-10');
 				$('#contentContainer').addClass('col-md-pull-2');
 

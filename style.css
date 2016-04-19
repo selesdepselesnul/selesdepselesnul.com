@@ -13,6 +13,15 @@ a.menu {
 	text-decoration: none;
 }
 
+.img-preview {
+	height: 200px;
+	width: 300px;
+}
+
+.title-preview {
+	color: black;
+}
+
 a.menu:hover {
 	font-size: 4em;
 }
