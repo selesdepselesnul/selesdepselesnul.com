@@ -25,14 +25,7 @@ $(document).ready(function() {
 				$('#contactMenu').removeClass('active');
 				$('#workMenu').addClass('active');
 				$('*').css('color', 'white');
-				$(document.body).css({
-						'background': '#1e1e1e', 
-					    'background': '-webkit-linear-gradient(#1e1e1e, #534f4f)', 
-					    'background': '-o-linear-gradient(#1e1e1e, #534f4f)', 
-					    'background': '-moz-linear-gradient(#1e1e1e, #534f4f)', 
-					    'background': 'linear-gradient(#1e1e1e, #534f4f)', 
-						'overflow-y' : 'scroll'
-				});
+				$(document.body).css('background', '#5e5d5d');
 				$('#bigHeader').css('visibility', 'hidden');
 				$('#contact').css('visibility', 'hidden');
 
@@ -53,14 +46,7 @@ $(document).ready(function() {
 		} else if($(window).scrollTop() > $('#work').outerHeight()){ // contact
 			console.log('not work part');
 			if(!animated.contact) {
-				$(document.body).css({
-					'background' : '#534f4f', 
-					'background' : '-webkit-linear-gradient(#534f4f, #fff5f5)', 
-					'background' : '-o-linear-gradient(#534f4f, #fff5f5)',
-					'background' : '-moz-linear-gradient(#534f4f, #fff5f5)', 
-					'background' : 'linear-gradient(#534f4f, #fff5f5)',
-					'overflow-y' : 'scroll'
-				});
+				$(document.body).css('background', '#ffffff');
 				$('#workMenu').removeClass('active');
 				$('#contactMenu').addClass('active');
 				$('*').css('color', 'black');
@@ -79,14 +65,7 @@ $(document).ready(function() {
 			animated.about = false
 		} else { // about
 			if(!animated.about) {
-				$(document.body).css({
-					'background' : '#000', 
-					'background' : '-webkit-linear-gradient(#000, #1e1e1e)', 
-					'background' : '-o-linear-gradient(#000, #1e1e1e)',
-					'background' : '-moz-linear-gradient(#000, #1e1e1e)', 
-					'background' : 'linear-gradient(#000, #1e1e1e)',
-					'overflow-y' : 'scroll'
-				});
+				$(document.body).css('background' , '#000');
 				$('#aboutMenu').css({
 					'background-color': '#337ab7',
 					'border-radius' : '4px'
