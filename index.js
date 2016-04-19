@@ -59,7 +59,7 @@ $(document).ready(function() {
 		} else { // about
 			if(!animated.about) {
 				$('*').css('color', 'white');
-
+				$('#aboutContent').animateCSS('tada');
 				$('#verticalHeader').css('visibility', 'hidden');
 				$('#bigHeader').css('visibility', '');
 				$('#work').css('visibility', 'hidden');
