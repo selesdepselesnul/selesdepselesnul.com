@@ -1,6 +1,11 @@
 
-a {
+a.menu {
 	color: white;
+	text-decoration: none;
+}
+
+a.menu:hover {
+	font-size: 4em;
 }
 
 li {

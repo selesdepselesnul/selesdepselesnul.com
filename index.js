@@ -1,4 +1,9 @@
 $(document).ready(function() {
+
+	$('.menu').hover(function(e) {
+		console.log('hover!');
+		$(this).animateCSS('pulse');
+	})
 	$('#work').css('visibility', 'hidden');
 	$('#contact').css('visibility', 'hidden');
 	$('#verticalHeader').css('visibility', 'hidden');
