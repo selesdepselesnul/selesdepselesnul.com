@@ -17,6 +17,7 @@ body {
 
 .img-preview {
 	margin-top: 20px;
+	width: auto;
 }
 
 #work, #contact, #verticalHeader {

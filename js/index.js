@@ -36,6 +36,9 @@
 				$('#contentContainer').removeClass('col-md-pull-2');
 
 				$('#verticalHeader').css('visibility', '');
+				$('#work').css('visibility', '');
+				$('#workIntro').css('visibility', '');
+				$('#workIntro').animateCSS('flipInY');
 				setImageVisibility('');
 				
 				for (var i = 1; i <= 5; i++) {
@@ -55,6 +58,7 @@
 				$('#contactMenu').addClass('active');
 				$('*').css('color', 'black');
 				$('#work').css('visibility', 'hidden');
+				$('#workIntro').css('visibility', 'hidden');
 				setImageVisibility('hidden');
 				$('#verticalHeader').css('visibility', '');
 				$('#verticalHeader').animateCSS('bounceInRight');
@@ -81,6 +85,7 @@
 				$('#verticalHeader').css('visibility', 'hidden');
 				$('#bigHeader').css('visibility', '');
 				$('#work').css('visibility', 'hidden');
+				$('#workIntro').css('visibility', 'hidden');
 				setImageVisibility('hidden');
 	
 				animated.about = true;	

@@ -35,15 +35,16 @@
 		</div>
 
 		<section class="col-md-10" id="contentContainer">
+		
 			<section class="row" id="work">
-				<h1>Random selected works of mine</h1>
+				<h1 id="workIntro">Random selected works of mine</h1>
 				<img id="img-1" src="<?php echo get_template_directory_uri() . '/images/projects/e-perizinan/home.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
 				<img id="img-2" src="<?php echo get_template_directory_uri() . '/images/projects/libas/main.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
 				<img id="img-3" src="<?php echo get_template_directory_uri() . '/images/projects/seeur/main.png'; ?>" class="img-thumbnail img-reponsive img-preview">
 				<img id="img-4" src="<?php echo get_template_directory_uri() . '/images/projects/copaspedia/main.png'; ?>"  class="img-thumbnail img-reponsive img-preview ">
 				<img id="img-5" src="<?php echo get_template_directory_uri() . '/images/projects/lapgas/main.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
 			</section>
-
+	
 
 			<section class="row content" id="contact" >
 				LET'S GET IN TOUCH <br/>
