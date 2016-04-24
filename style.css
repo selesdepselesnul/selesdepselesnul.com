@@ -13,11 +13,6 @@ a.menu {
 	text-decoration: none;
 }
 
-.img-preview {
-	height: 230px;
-	width: 440px;
-}
-
 .title-preview {
 	color: black;
 }
@@ -34,7 +29,6 @@ body {
 	background: #000;
 	overflow-y: scroll;
 }
-
 
 .menu {
 	font-size: 1.8em;

@@ -1,7 +1,5 @@
-$(document).ready(function() {
-
-
-	$('.menu').hover(function(e) {
+( function( $ ) {
+    $('.menu').hover(function(e) {
 		console.log('hover!');
 		$(this).animateCSS('pulse');
 	})
@@ -82,4 +80,4 @@ $(document).ready(function() {
 			animated.contact = false;
 		}
 	});
-});
+} )( jQuery );
