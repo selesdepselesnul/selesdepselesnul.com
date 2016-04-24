@@ -12,6 +12,13 @@
 		work : false,
 		contact: false
 	};
+
+	function setImageVisibility(visibility) {
+		for (var i = 1; i <= 5; i++) {
+			$('#img-'+i).css('visibility', visibility);
+		}
+	}
+
 	$('#aboutContent').animateCSS('tada');
 	$(window).scroll(function(e) {
 		// work
@@ -29,11 +36,12 @@
 				$('#contentContainer').removeClass('col-md-pull-2');
 
 				$('#verticalHeader').css('visibility', '');
-				$('#work').css('visibility', '');
+				setImageVisibility('');
 				
+				for (var i = 1; i <= 5; i++) {
+					$('#img-'+i).animateCSS('zoomIn');
+				}
 
-				
-				$('#work').animateCSS('zoomIn');
 				$('#verticalHeader').animateCSS('slideInLeft');
 				animated.work = true;			
 			}
@@ -47,6 +55,7 @@
 				$('#contactMenu').addClass('active');
 				$('*').css('color', 'black');
 				$('#work').css('visibility', 'hidden');
+				setImageVisibility('hidden');
 				$('#verticalHeader').css('visibility', '');
 				$('#verticalHeader').animateCSS('bounceInRight');
 				$('#verticalHeaderContainer').addClass('col-md-push-10');
@@ -72,6 +81,7 @@
 				$('#verticalHeader').css('visibility', 'hidden');
 				$('#bigHeader').css('visibility', '');
 				$('#work').css('visibility', 'hidden');
+				setImageVisibility('hidden');
 	
 				animated.about = true;	
 			}

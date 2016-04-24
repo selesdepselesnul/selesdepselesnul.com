@@ -15,6 +15,10 @@ body {
 	overflow-y: scroll;
 }
 
+.img-preview {
+	margin-top: 20px;
+}
+
 #work, #contact, #verticalHeader {
 	visibility: hidden;
 }

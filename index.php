@@ -3,7 +3,7 @@
 
 		<ul class="nav nav-pills nav-justified">
 			<li id="aboutMenu" class="presentation">
-				<a href="#bigHeader" id="aboutLink" class="menu">About</a>
+				<a href="#" id="aboutLink" class="menu">About</a>
 			</li>
 			<li class="presentation">
 				<a href="#work" id="workLink" class="menu">Work</a>
@@ -26,7 +26,7 @@
 	<section class="row" id="content">
 		<div class="col-md-2" id="verticalHeaderContainer">
 			<ul id="verticalHeader" class="nav nav-pills nav-stacked">
-				<li role="presentation"><a href="#bigHeader" id="aboutLink">About</a></li>
+				<li role="presentation"><a href="#" id="aboutLink">About</a></li>
 				<li role="presentation" id="workMenu">
 				<a href="#work" id="workLink">Work</a></li>
 				<li role="presentation" id="contactMenu">
@@ -37,11 +37,11 @@
 		<section class="col-md-10" id="contentContainer">
 			<section class="row" id="work">
 				<h1>Random selected works of mine</h1>
-				<img src="<?php echo get_template_directory_uri() . '/images/projects/e-perizinan/home.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
-				<img src="<?php echo get_template_directory_uri() . '/images/projects/libas/main.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
-				<img src="<?php echo get_template_directory_uri() . '/images/projects/seeur/main.png'; ?>" class="img-thumbnail img-reponsive img-preview">
-				<img src="<?php echo get_template_directory_uri() . '/images/projects/copaspedia/main.png'; ?>"  class="img-thumbnail img-reponsive img-preview ">
-				<img src="<?php echo get_template_directory_uri() . '/images/projects/lapgas/main.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
+				<img id="img-1" src="<?php echo get_template_directory_uri() . '/images/projects/e-perizinan/home.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
+				<img id="img-2" src="<?php echo get_template_directory_uri() . '/images/projects/libas/main.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
+				<img id="img-3" src="<?php echo get_template_directory_uri() . '/images/projects/seeur/main.png'; ?>" class="img-thumbnail img-reponsive img-preview">
+				<img id="img-4" src="<?php echo get_template_directory_uri() . '/images/projects/copaspedia/main.png'; ?>"  class="img-thumbnail img-reponsive img-preview ">
+				<img id="img-5" src="<?php echo get_template_directory_uri() . '/images/projects/lapgas/main.png'; ?>" class="img-thumbnail img-reponsive img-preview ">
 			</section>
 
 
