@@ -29,11 +29,6 @@ body {
 	height: 40px;
 }
 
-#aboutMenu > a {
-	background-color: #337ab7;
-	width: auto;
-	border-radius: 4px;
-}
 a.menu {
 	color: white;
 	text-decoration: none;
@@ -44,7 +39,7 @@ a.menu {
 }
 
 a.menu:hover {
-	font-size: 4em;
+	font-size: 2em;
 }
 
 li {
@@ -53,13 +48,14 @@ li {
 
 
 .menu {
-	font-size: 1.8em;
+	font-size: 1.2em;
 }
 
 #verticalHeader {
 	position: fixed;
+	top: 50%;
 	z-index: 1;
-	font-size: 2em;
+	font-size: 1.2em;
 }
 
 #aboutContent {
