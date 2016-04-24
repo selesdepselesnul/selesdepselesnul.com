@@ -2,10 +2,13 @@
     $('.menu').hover(function(e) {
 		console.log('hover!');
 		$(this).animateCSS('pulse');
-	})
+	});
+
 	$('#aboutContent').mouseenter(function(e) {
 		$(this).animateCSS('tada');
-	})
+	});
+
+
 
 	var animated = {
 		about : false,
@@ -95,3 +98,4 @@
 		}
 	});
 } )( jQuery );
+

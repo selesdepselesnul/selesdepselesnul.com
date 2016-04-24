@@ -79,11 +79,41 @@
 					<a href="http://last.fm/user/h1t4k3">
 					http://last.fm/user/h1t4k3</a>
 				</p>
+				<div class="well text-center" id="blogPost">
+				
+					Or read my notes and give comment to it ? <br />
+					<?php 
+						if(have_posts())
+							while (have_posts()) {
+								the_post();
+								echo '<a href="';
+								the_permalink();
+								echo '">';
+								the_title_attribute();
+								echo '</a>';
+								echo '<br />';
+							}
+						else
+							echo "<h2>Currently I have none</h2>";
+					?>						
+				
+					<div class="text-left nav-post">
+						<?php echo next_posts_link('<< Older'); ?>	
+					</div>
+					<div class="text-right nav-post">
+						<?php echo previous_posts_link('Newer >>'); ?>	
+					</div>
+					
+				</div>
 				<footer>
 					&copy 2016 by Moch Deden
 				</footer>
 			</section>
 		</section>
 	</section>
+<script>
+	$('.nav-post > a').attr('href', $('.nav-post > a').attr('href')+'#blogPost');
+	$('.nav-post > a').prop('style', 'color: #fff;');
+</script>
 <?php get_footer(); ?>
 
