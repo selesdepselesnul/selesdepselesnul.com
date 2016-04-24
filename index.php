@@ -88,7 +88,7 @@
 								the_post();
 								echo '<div class="individual-note">';
 								the_title_attribute();
-								echo '<br /><a class="btn btn-default" href="';
+								echo '<br /><a class="btn btn-default" target="_blank" href="';
 								the_permalink();
 								echo '">';
 								echo "Read note";
