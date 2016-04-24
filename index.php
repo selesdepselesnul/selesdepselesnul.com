@@ -52,27 +52,27 @@
 				or if you have something we could collaborate on,<br/>
 				please feel free to get in touch.
 				<br/>
-				<p class="well">
+				<p class="well text-center">
 				Send email to me ? <br/>
 				<img src="<?php echo get_template_directory_uri().'/images/email.svg'?>" class="contact-image">
 				<a href="mailto:selesdepselesnul@gmail.com?Subject=Hello" target="_top">selesdepselesnul@gmail.com</a>
 				</p>
-				<p class="well">
+				<p class="well text-center">
 				Or call me on phone ?<br/>
 				<img src="<?php echo get_template_directory_uri().'/images/phone.svg'?>" class="contact-image">
 				<a href="tel:6282317287806">+6282317287806</a> <br/>
 				</p>
-				<p class="well">
+				<p class="well text-center">
 				Or chat with me on telegram ? <br/>
 				<img src="<?php echo get_template_directory_uri().'/images/telegram.svg'?>" class="contact-image"> @selesdepselesnul
 				</p>
-				<p class="well">
+				<p class="well text-center">
 				Or you are programmer like me ? <br/>
 					<img src="<?php echo get_template_directory_uri().'/images/github.svg'?>" class="contact-image">
 					<a href="https://github.com/selesdepselesnul">
 					https://github.com/selesdepselesnul</a>
 				</p>
-				<p class="well">
+				<p class="well text-center">
 					Or just wanna chill with me ?<br/>
 					yeah maybe we have same taste of music ?<br/>
 					<img src="<?php echo get_template_directory_uri().'/images/lastfm.svg'?>" class="contact-image">
