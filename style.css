@@ -38,10 +38,6 @@ a.menu {
 	color: black;
 }
 
-a.menu:hover {
-	font-size: 2em;
-}
-
 li {
 	list-style: none;
 }

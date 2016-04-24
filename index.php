@@ -2,7 +2,7 @@
 	<header class="row" id="bigHeader">
 
 		<ul class="nav nav-pills nav-justified">
-			<li id="aboutMenu" class="presentation">
+			<li id="aboutMenu" class="presentation active">
 				<a href="#" id="aboutLink" class="menu">About</a>
 			</li>
 			<li class="presentation">
