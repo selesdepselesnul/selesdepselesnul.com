@@ -6,9 +6,7 @@
 	$('#aboutContent').mouseenter(function(e) {
 		$(this).animateCSS('tada');
 	})
-	$('#work').css('visibility', 'hidden');
-	$('#contact').css('visibility', 'hidden');
-	$('#verticalHeader').css('visibility', 'hidden');
+
 	var animated = {
 		about : false,
 		work : false,
@@ -62,8 +60,9 @@
 			animated.work = false;
 			animated.about = false
 		} else { // about
+
 			if(!animated.about) {
-				$(document.body).css('background' , '#000');
+				$(document.body).css('background', '#000');
 				$('#aboutMenu').css({
 					'background-color': '#337ab7',
 					'border-radius' : '4px'
