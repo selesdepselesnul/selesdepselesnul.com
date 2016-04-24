@@ -15,6 +15,10 @@ body {
 	overflow-y: scroll;
 }
 
+.individual-note {
+	margin-top: 40px;
+}
+
 .img-preview {
 	margin-top: 20px;
 	width: auto;

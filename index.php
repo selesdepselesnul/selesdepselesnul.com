@@ -86,12 +86,14 @@
 						if(have_posts())
 							while (have_posts()) {
 								the_post();
-								echo '<a href="';
+								echo '<div class="individual-note">';
+								the_title_attribute();
+								echo '<br /><a class="btn btn-default" href="';
 								the_permalink();
 								echo '">';
-								the_title_attribute();
+								echo "Read note";
 								echo '</a>';
-								echo '<br />';
+								echo '</div>';
 							}
 						else
 							echo "<h2>Currently I have none</h2>";
