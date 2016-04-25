@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div class="container">
 	<div class="row">
 		<div id="blogContent" class="col-md-10">
 			<?php
@@ -25,10 +24,7 @@
 						<a href="<?php echo get_site_url().'#work'?>" id="workLink" class="menu">Work</a>
 					</li>
 					<li class="presentation">
-						<a href="<?php echo get_site_url().'#contact'?>" id="contactLink" class="menu">Contact</a>
-					</li>
-					<li class="presentation active">
-						<a href="#" id="blogLink" class="menu">Blog</a>
+						<a href="<?php echo get_site_url().'#blog'?>" id="contactLink" class="menu">Blog</a>
 					</li>
 				</ul>
 				<footer id="singlePostFooter">
@@ -37,8 +33,8 @@
 			</div>
 		</div>
 	</div>
-</div>
 <script>
 	$(document.body).css('background-color', '#fff');
 	$('*').css('color', '#000');
 </script>
+<?php get_footer(); ?>

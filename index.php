@@ -3,13 +3,13 @@
 
 		<ul class="nav nav-pills index-nav-menu">
 			<li id="aboutMenu" class="presentation active">
-				<a href="#" id="aboutLink" class="menu">About</a>
+				<a href="#" id="aboutLink">About</a>
 			</li>
 			<li class="presentation">
-				<a href="#work" id="workLink" class="menu">Work</a>
+				<a href="#work" id="workLink">Work</a>
 			</li>
 			<li class="presentation">
-				<a href="#blog" id="blogLink" class="menu">Blog</a>
+				<a href="#blog" id="blogLink">Blog</a>
 			</li>
 
 		</ul>
@@ -24,11 +24,11 @@
 			please feel free to get in touch.
 			<br/>
 				<p class="well">
-					<img title="email" src="<?php echo get_template_directory_uri().'/images/email.svg'?>" class="contact-image">
-					<a href="mailto:selesdepselesnul@gmail.com?Subject=Hello" target="_top">selesdepselesnul@gmail.com</a>
+					<img title="telegram" src="<?php echo get_template_directory_uri().'/images/telegram.svg'?>" class="contact-image"> @selesdepselesnul
 				</p>
 				<p class="well">
-				<img title="telegram" src="<?php echo get_template_directory_uri().'/images/telegram.svg'?>" class="contact-image"> @selesdepselesnul
+					<img title="email" src="<?php echo get_template_directory_uri().'/images/email.svg'?>" class="contact-image">
+					<a href="mailto:selesdepselesnul@gmail.com?Subject=Hello" target="_top">selesdepselesnul@gmail.com</a>
 				</p>
 				<p class="well">
 					<img title="github" src="<?php echo get_template_directory_uri().'/images/github.svg'?>" class="contact-image">
@@ -47,9 +47,11 @@
 			<ul id="verticalHeader" class="nav nav-pills nav-stacked">
 				<li role="presentation"><a href="#" id="aboutLink">About</a></li>
 				<li role="presentation" id="workMenu">
-				<a href="#work" id="workLink">Work</a></li>
+					<a href="#work" id="workLink">Work</a>
+				</li>
 				<li role="presentation" id="blogMenu">
-				<a href="#blog" id="blogLink">Blog</a></li>
+					<a href="#blog" id="blogLink">Blog</a>
+				</li>
 			</ul>
 		</div>
 
@@ -75,7 +77,7 @@
 							echo '<br /><a class="btn btn-default" target="_blank" href="';
 							the_permalink();
 							echo '">';
-							echo "Read note";
+							echo "read it";
 							echo '</a>';
 							echo '</div>';
 						}
