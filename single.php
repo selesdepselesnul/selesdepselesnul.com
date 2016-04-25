@@ -19,16 +19,16 @@
 			<div class="single-nav-menu">
 				<ul class="nav nav-pills nav-stacked">
 					<li id="aboutMenu" class="presentation">
-						<a href="#" id="aboutLink" class="menu">About</a>
+						<a href="<?php echo get_site_url().'#'?>" id="aboutLink" class="menu">About</a>
 					</li>
 					<li class="presentation">
-						<a href="#work" id="workLink" class="menu">Work</a>
+						<a href="<?php echo get_site_url().'#work'?>" id="workLink" class="menu">Work</a>
 					</li>
 					<li class="presentation">
-						<a href="#contact" id="contactLink" class="menu">Contact</a>
+						<a href="<?php echo get_site_url().'#contact'?>" id="contactLink" class="menu">Contact</a>
 					</li>
 					<li class="presentation active">
-						<a href="#blog" id="blogLink" class="menu">Blog</a>
+						<a href="#" id="blogLink" class="menu">Blog</a>
 					</li>
 				</ul>
 				<footer id="singlePostFooter">
