@@ -1,19 +1,16 @@
 ( function( $ ) {
     $('.menu').hover(function(e) {
-		console.log('hover!');
 		$(this).animateCSS('pulse');
 	});
 
 	$('#aboutContent').mouseenter(function(e) {
-		$(this).animateCSS('tada');
+		$(this).animateCSS('fadeIn');
 	});
-
-
 
 	var animated = {
 		about : false,
 		work : false,
-		contact: false
+		blog: false
 	};
 
 	function setImageVisibility(visibility) {
@@ -22,18 +19,16 @@
 		}
 	}
 
-	$('#aboutContent').animateCSS('tada');
+	$('#aboutContent').animateCSS('fadeIn');
 	$(window).scroll(function(e) {
 		// work
 		if ($(window).scrollTop() >= $('#work').offset().top 
 			&& $(window).scrollTop() <= $('#work').outerHeight()) {
 			if(!animated.work) {
-				$('#contactMenu').removeClass('active');
+				$('#blogMenu').removeClass('active');
 				$('#workMenu').addClass('active');
-				$('*').css('color', 'white');
-				$(document.body).css('background', '#5e5d5d');
 				$('#bigHeader').css('visibility', 'hidden');
-				$('#contact').css('visibility', 'hidden');
+				$('#blog').css('visibility', 'hidden');
 
 				$('#verticalHeaderContainer').removeClass('col-md-push-10')
 				$('#contentContainer').removeClass('col-md-pull-2');
@@ -52,14 +47,12 @@
 				animated.work = true;			
 			}
 			animated.about = false;
-			animated.contact = false;
-		} else if($(window).scrollTop() > $('#work').outerHeight()){ // contact
+			animated.blog = false;
+		} else if($(window).scrollTop() > $('#work').outerHeight()){ // blog
 			console.log('not work part');
-			if(!animated.contact) {
-				$(document.body).css('background', '#ffffff');
+			if(!animated.blog) {
 				$('#workMenu').removeClass('active');
-				$('#contactMenu').addClass('active');
-				$('*').css('color', 'black');
+				$('#blogMenu').addClass('active');
 				$('#work').css('visibility', 'hidden');
 				$('#workIntro').css('visibility', 'hidden');
 				setImageVisibility('hidden');
@@ -68,23 +61,21 @@
 				$('#verticalHeaderContainer').addClass('col-md-push-10');
 				$('#contentContainer').addClass('col-md-pull-2');
 
-				$('#contact').css('visibility', '');
-				$('#contact').animateCSS('slideInLeft');
+				$('#blog').css('visibility', '');
+				$('#blog').animateCSS('slideInLeft');
 		
-				animated.contact = true;			
+				animated.blog = true;			
 			}
 			animated.work = false;
 			animated.about = false
 		} else { // about
 
 			if(!animated.about) {
-				$(document.body).css('background', '#000');
 				$('#aboutMenu').css({
 					'background-color': '#337ab7',
 					'border-radius' : '4px'
 				});
-				$('*').css('color', 'white');
-				$('#aboutContent').animateCSS('tada');
+				$('#aboutContent').animateCSS('fadeIn');
 				$('#verticalHeader').css('visibility', 'hidden');
 				$('#bigHeader').css('visibility', '');
 				$('#work').css('visibility', 'hidden');
@@ -94,7 +85,7 @@
 				animated.about = true;	
 			}
 			animated.work = false;
-			animated.contact = false;
+			animated.blog = false;
 		}
 	});
 } )( jQuery );
