@@ -10,22 +10,23 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+
 body {
 	background: #000;
 	overflow-y: scroll;
 }
 
-.index-nav-menu, .single-nav-menu {
+.single-nav-menu {
 	position: fixed;
+	text-align: center;
 }
 
-.single-nav-menu {
-	bottom: 4%;
-	right: 20%;
+#singlePostFooter {
+	font-size: 0.8em;
 }
 
 .index-nav-menu {
-	left: 20%;
+	margin-left: 20%;
 }
 
 .individual-note {
@@ -58,8 +59,6 @@ a.menu {
 li {
 	list-style: none;
 }
-
-
 
 .menu {
 	font-size: 1.2em;
