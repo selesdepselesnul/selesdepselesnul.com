@@ -1,7 +1,7 @@
 <?php get_header();?>
 	<header class="row" id="bigHeader">
 
-		<ul class="nav nav-pills nav-justified">
+		<ul class="nav nav-pills index-nav-menu">
 			<li id="aboutMenu" class="presentation active">
 				<a href="#" id="aboutLink" class="menu">About</a>
 			</li>

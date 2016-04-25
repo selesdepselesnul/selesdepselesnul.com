@@ -15,6 +15,19 @@ body {
 	overflow-y: scroll;
 }
 
+.index-nav-menu, .single-nav-menu {
+	position: fixed;
+}
+
+.single-nav-menu {
+	bottom: 4%;
+	right: 20%;
+}
+
+.index-nav-menu {
+	left: 20%;
+}
+
 .individual-note {
 	margin-top: 40px;
 }
