@@ -16,8 +16,7 @@
 
 		<div id="aboutContent" class="row">
 			<br />
-			Hi :)<br/>
-			my name is Moch Deden <br/>
+			Hi :) my name is Moch Deden <br/>
 			i'm a web, desktop and mobile programmer from Bandung, Indonesia <br/>
 			If you have a project you would like to hire me to work on<br/>
 			or if you have something we could collaborate on,<br/>
