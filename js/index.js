@@ -13,12 +13,6 @@
 		blog: false
 	};
 
-	function setImageVisibility(visibility) {
-		for (var i = 1; i <= 5; i++) {
-			$('#img-'+i).css('visibility', visibility);
-		}
-	}
-
 	$('#aboutContent').animateCSS('fadeIn');
 	$(window).scroll(function(e) {
 		// work
@@ -37,11 +31,10 @@
 				$('#work').css('visibility', '');
 				$('#workIntro').css('visibility', '');
 				$('#workIntro').animateCSS('flipInY');
-				setImageVisibility('');
 				
-				for (var i = 1; i <= 5; i++) {
-					$('#img-'+i).animateCSS('zoomIn');
-				}
+				$('.img-preview').css('visibility', '');
+				$('.img-preview').animateCSS('zoomIn');
+				
 
 				$('#verticalHeader').animateCSS('slideInLeft');
 				animated.work = true;			
@@ -55,7 +48,7 @@
 				$('#blogMenu').addClass('active');
 				$('#work').css('visibility', 'hidden');
 				$('#workIntro').css('visibility', 'hidden');
-				setImageVisibility('hidden');
+				$('.img-preview').css('visibility', 'hidden');
 				$('#verticalHeader').css('visibility', '');
 				$('#verticalHeader').animateCSS('bounceInRight');
 				$('#verticalHeaderContainer').addClass('col-md-push-10');
@@ -80,7 +73,7 @@
 				$('#bigHeader').css('visibility', '');
 				$('#work').css('visibility', 'hidden');
 				$('#workIntro').css('visibility', 'hidden');
-				setImageVisibility('hidden');
+				$('.img-preview').css('visibility', 'hidden');
 	
 				animated.about = true;	
 			}
